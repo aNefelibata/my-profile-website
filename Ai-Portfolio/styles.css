@@ -1,0 +1,331 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+h1, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba
+}
+
+.navbar .brand h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #00C8FF;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #00C8FF;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 1)),
+                url('/mnt/data/portimage.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-indicator .fa-mouse {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+/* Keyframe for bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+/* Apply to the parent container of the About page */
+/* General section styles */
+#about-section {
+    background-color: #f8f9fa; /* Light background color for contrast */
+    padding: 50px 0; /* Space around the section */
+}
+
+#about-section h2 {
+    font-size: 2.5rem; /* Main heading size */
+    color: #333; /* Dark color for headings */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+#about-section .about-text h3 {
+    font-size: 2rem; /* Subheading size */
+    color: #007bff; /* Bootstrap primary color */
+}
+
+#about-section .about-text h4 {
+    font-size: 1.5rem; /* Subtitle size */
+    color: #555; /* Darker gray for contrast */
+    margin-bottom: 10px; /* Space below the subtitle */
+}
+
+#about-section .about-text p {
+    font-size: 1.2rem; /* Text size */
+    color: #666; /* Gray for body text */
+    line-height: 1.6; /* Better readability */
+}
+
+/* About Me Section */
+#about-me {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 80px 0; /* Padding for spacing */
+}
+
+#about-me .bold-heading {
+    font-size: 3.5rem; /* Bold heading size */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#about-me h2 {
+    color: #b7c200; /* Yellow accent for subtitle */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#about-me p {
+    font-size: 1.1rem; /* Standard font size for paragraph */
+    line-height: 1.6;
+}
+
+#about-me img {
+    width: 50%; /* Image fills the column width */
+    border-radius: 8px; /* Soft corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+@media (max-width: 768px) {
+    #about-me .row {
+        flex-direction: column; /* Stack columns vertically on mobile */
+        text-align: center;
+    }
+
+    #about-me .bold-heading {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    #about-me img {
+        margin-bottom: 20px; /* Add margin on image for spacing on small screens */
+    }
+}
+
+/* Expertise Section Styling */
+.expertise-section {
+    padding: 40px 0;
+    background-color: #09131a;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Grid Styling */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Centers the items within the grid cells */
+    align-items: center;
+}
+
+.expertise-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+    width: 100%; /* Ensure full width within the grid cell */
+    max-width: 300px; /* Optional: Set a max width for the item */
+}
+
+.expertise-item:hover {
+    transform: translateY(-5px);
+}
+
+.expertise-item img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height to maintain consistency */
+    object-fit: contain; /* Ensures images scale properly within the defined dimensions */
+    margin-bottom: 10px;
+}
+
+.expertise-item span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .expertise-grid {
+        grid-template-columns: repeat(1, 1fr); /* One column on small screens */
+    }
+}
+
+
+
+/* Footer Section */
+#footer {
+    background-color: #07dfe6; /* Yellow background */
+    color: #000000; /* Black text */
+    padding: 60px 0;
+}
+
+#footer h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+#footer .social-links li {
+    margin-bottom: 10px;
+}
+
+#footer .social-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+#footer .more-info .btn {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-color: #000000;
+    color: #000000;
+    font-weight: 700;
+}
+
+#footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    #footer .row {
+        text-align: center;
+    }
+
+    #footer .social-links, #footer .more-info {
+        margin-bottom: 20px;
+    }
+}
