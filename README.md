@@ -12,7 +12,7 @@ Steps taken to set up repo
      . Name your repository (e.g., my-profile-website).
      . Set the repository to Public
 9. added Github repo as a remote with " git remote add origin https://github.com/aNefelibata/my-profile-website.git
-10. pushed up commmit to reop using " git push -u origin main "
+10. pushed up commmit to repo using " git push -u origin main "
 
 Ran into issure a port error. after some research trying to get into the setting (was not able to) I deleted the repo and initial created of the git repo in my files. 
 I noticed I couldnt push or fetch meaning my url was messed up. 
