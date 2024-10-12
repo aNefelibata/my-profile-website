@@ -17,3 +17,4 @@ Steps taken to set up repo
 Ran into issure a port error. after some research trying to get into the setting (was not able to) I deleted the repo and initial created of the git repo in my files. 
 I noticed I couldnt push or fetch meaning my url was messed up. 
 I redid all the steps twice and found out I was using the SSH at first. The third time I copied and pasted the url given on GitHub and everything worked out. 
+https://github.com/aNefelibata/my-profile-website
